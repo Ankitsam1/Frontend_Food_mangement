@@ -8,7 +8,7 @@ function Adedproducts() {
     useEffect(() => {
       const fetchProducts = async () => {
         try {
-          const response = await fetch('http://localhost:4000/product/getproducts'); // adjust the URL as needed
+          const response = await fetch('https://backend-food-management.onrender.com/product/getproducts'); // adjust the URL as needed
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
